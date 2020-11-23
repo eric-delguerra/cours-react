@@ -10,7 +10,18 @@ const anagrammes = (stringA, stringB) => {
    * anagrams('RAIL! SAFETY!', 'fairy tales') === true
    * anagrams('Hi there', 'Bye there') === false
    */
+   let strA = stringA.replace(/[^\w]/g, "").toLowerCase()
+   let strB = stringB.replace(/[^\w]/g, "").toLowerCase()
 
+   strA = strA.split('').sort().join()
+   strB = strB.split('').sort().join()
+
+   for (let char in strA) {
+        if (strA[char] !== strB[char]) {
+          return false
+        }
+    }
+    return true
 };
 
 
@@ -32,12 +43,35 @@ class Stack {
  * s.pop(); // returns 2
  * s.peek(); // returns 1
  */
+
+ constructor(){
+   this.something = []
+ }
+
+  push(value){
+   return this.something[this.something.length] = value
+ }
+
+  pop(){
+    const tabTemporaire = []
+    const elemToDelete = this.something[this.something.length -1]
+    let i = 0
+    while (i != this.something.length - 1) {
+      tabTemporaire[i] = this.something[i]
+      i++
+    }
+     this.something = tabTemporaire
+     return elemToDelete
+   }
+  peek(){
+   return this.something[0]
+ }
 };
 
 
 const fizzBuzz = (n) => {
 /**
- * Affiche les nombres de 1 à n, en remplaçant les multiples de 3 par fizz et 
+ * Affiche les nombres de 1 à n, en remplaçant les multiples de 3 par fizz et
  * les multiples de 5 par buzz
  *
  * Exemple :
@@ -49,7 +83,17 @@ const fizzBuzz = (n) => {
  * console.log(4)
  * console.log('buzz')
  */
-
+ for (var i = 1; i <= n; i++) {
+   if (i%3 == 0 && i != n) {
+     console.log('fizz');
+   } else if (i%5 == 0 && i != n) {
+     console.log('buzz');
+   } else if (i == n) {
+     console.log('fizzbuzz');
+   } else {
+     console.log(i);
+   }
+ }
 };
 
 const spirale = (n) => {
@@ -70,7 +114,39 @@ const spirale = (n) => {
  *              [11, 16, 15, 6],
  *              [10,  9,  8, 7]]
  */
+  var x = []
+  for (var i = 0; i < n; i++) {
+    x[i] = []
+  }
+  let counter = 1;
+  let startColumn = 0;
+  let endColumn = n - 1;
+  let startRow = 0;
+  let endRow = n - 1;
 
+  while (startColumn <= endColumn && startRow <= endRow) {
+    for (let i = startColumn; i <= endColumn; i++) {
+      x[startRow][i] = counter;
+      counter++;
+    }
+    startRow++;
+    for (let i = startRow; i <= endRow; i++) {
+      x[i][endColumn] = counter;
+      counter++;
+    }
+    endColumn--;
+    for (let i = endColumn; i >= startColumn; i--) {
+      x[endRow][i] = counter;
+      counter++;
+    }
+    endRow--;
+    for (let i = endRow; i >= startRow; i--) {
+      x[i][startColumn] = counter;
+      counter++;
+    }
+    startColumn++;
+  }
+  return x;
 };
 
 
@@ -103,6 +179,8 @@ const puissance4 = (grid) => {
  *   [ 2, 2, 1, 1, 2 ]]
  *   ) = 0
  */
+
+ 
 }
 
 module.exports = {
@@ -112,4 +190,3 @@ module.exports = {
   anagrammes,
   Stack
 }
-
