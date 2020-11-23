@@ -1,0 +1,104 @@
+
+> assets@1.0.0 test E:\Cours\JS React\cours-react\assets
+> jest "--no-color"
+
+  console.log
+    1
+
+      at console.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
+  console.log
+    2
+
+      at console.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
+  console.log
+    fizz
+
+      at console.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
+  console.log
+    4
+
+      at console.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
+  console.log
+    buzz
+
+      at console.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
+  console.log
+    1
+
+      at console.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
+  console.log
+    2
+
+      at console.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
+  console.log
+    fizz
+
+      at console.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
+  console.log
+    4
+
+      at console.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
+  console.log
+    buzz
+
+      at console.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
+  console.log
+    fizz
+
+      at console.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
+  console.log
+    7
+
+      at console.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
+  console.log
+    8
+
+      at console.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
+  console.log
+    fizz
+
+      at console.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
+  console.log
+    buzz
+
+      at console.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
+  console.log
+    11
+
+      at console.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
+  console.log
+    fizz
+
+      at console.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
+  console.log
+    13
+
+      at console.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
+  console.log
+    14
+
+      at console.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
+  console.log
+    fizzbuzz
+
+      at console.<anonymous> (node_modules/jest-mock/build/index.js:845:25)
+
