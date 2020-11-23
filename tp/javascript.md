@@ -25,7 +25,7 @@ import { doSomething } from './dependency';
 La fonction `expect` sert à définir le retour que l'on attend d'une méthode testée.   
 
 **3. A quoi sert `toEqual` ? Trouvez 5 autres fonctions similaires.**  
-`toEqual` sert à verifier si la valeur de sortit correspond à la valeur passée en paramêtre.   
+`toEqual` sert à verifier si la valeur de sortit correspond à la valeur passée en paramètre.   
 Il existe plusieur métodes : `toBeDefined`, `toBe`, `toBeTruthy`, `toBeFalsy`, `toBeNull`, etc.
 
 **4. Trouver le rôle des fonctions `beforeEach` et `afterEach`. En déduire le rôle de la fonction `describe`.**  
