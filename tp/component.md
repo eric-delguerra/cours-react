@@ -27,4 +27,4 @@ Je préfère la méthode en ligne de commande.
 
 Le meilleur design aura un point supplémentaire !  
 
-**N'aimes-tu pas ce coté ultra kitch ? 
+N'aimes-tu pas ce coté ultra kitch ? 
