@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a1302f42-3304-49de-a124-6d61e92c49f4/deploy-status)](https://app.netlify.com/sites/todochristmaslist/deploys) 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a1302f42-3304-49de-a124-6d61e92c49f4/deploy-status)](https://todochristmaslist.netlify.app/) 
 # TP : création d'un projet React et d'un premier composant.
 
 Ce TP montre comment créer un projet React à partir de zéro. Vous allez créer un premier composant, le designer et l'afficher sur un écran.
