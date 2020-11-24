@@ -12,7 +12,7 @@ class ListCadeau extends Component {
        {name :'Un poignet', isBuy : false},
        {name : 'Une truite arc-en-ciel', isBuy: false}
      ],
-     commande : false
+     'commande' : false
     }
   }
 
@@ -25,19 +25,12 @@ class ListCadeau extends Component {
       })
     )
   }
-  displayImage = (value) => {
-    // console.log("toto");
-    this.setState({commande: !value})
+  displayImage = () => {
+    this.setState({'commande': !this.state.commande})
   }
 
   render() {
-
-      var santa;
-      if(this.state.commande){
-        santa = <img src="https://media.timeout.com/images/105644175/image.jpg" alt="santa"></img>
-      } else {
-        santa = <img className="dontDisplay" src="https://media.timeout.com/images/105644175/image.jpg" alt="santa"></img>
-      }
+    const santa = this.state.commande ? null : "dontDisplay"
 
     return (
       <div className="ListCadeau">
@@ -49,8 +42,8 @@ class ListCadeau extends Component {
             </li>)
           }
         </ul>
-        <button className="btn" type="button"  onClick={() => this.displayImage(this.state.commande)}>Je commande !</button><br></br>
-        {santa}
+        <button className="btn" type="button"  onClick={() => this.displayImage()}>Je commande !</button><br></br>
+        <img className={santa} src="https://media.timeout.com/images/105644175/image.jpg" alt="santa"/>
       </div>
     )
   }
