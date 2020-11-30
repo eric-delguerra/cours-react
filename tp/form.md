@@ -8,11 +8,11 @@ En pratique, des librairies comme [Formik](https://formik.org/) proposent une AP
 Lisez [le code lié à ce TP](https://codesandbox.io/s/tp-react-form-itrhu?file=/src/index.js) puis répondez aux questions.
 
 **1. Décrire le rôle de chaque fonction (une phrase par fonction).**  
-validateEmail(value)=> teste si le champs est rempli et si il contient une adresse mail dans un format valide  
-validateName(name)=> verifie la présence d'une valeur  
-NameField({ name, setName })=> modifie le state avec le nom entré  
-EmailField({ email, setEmail })=> modifie le state avec l'email entré  
-function Inscription() => declare les différents hooks et affiche les formulaires via des appels aux différent composants créé plus haut
+`validateEmail(value)=>` teste si le champs est rempli et si il contient une adresse mail dans un format valide  
+`validateName(name)=>`verifie la présence d'une valeur  
+`NameField({ name, setName })=>` modifie le state avec le nom entré  
+`EmailField({ email, setEmail })=>` modifie le state avec l'email entré  
+`function Inscription() =>` declare les différents hooks et affiche les formulaires via des appels aux différent composants créé plus haut
 
 
 **2. Quelles sont les states et les props mis en jeu ? Indiquez leur valeur par défaut.**  
