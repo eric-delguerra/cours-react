@@ -22,11 +22,11 @@ Les données du fichier Json
 **5. A quoi correspond `PropTypes.shape` ?**  
 Il permet de definir une props d'un objet dont les clés sont connues
 
-**6. Pourquoi l'attribut contient deux accolades ?**
+**6. Pourquoi l'attribut contient deux accolades ?**  
 Parce que c'est un objet
 
-**7. Quel est le nom de l'opérateur qui transmet les données du composant `App` vers le composant `User`? Pourquoi est-ce dangereux d'abuser de cet opérateur ?**
-
+**7. Quel est le nom de l'opérateur qui transmet les données du composant `App` vers le composant `User`? Pourquoi est-ce dangereux d'abuser de cet opérateur ?**   
+Destructuring, c'est dangereux de l'utiliser parce que l'on passe un Json avec beaucoup d'info et on en utilise même pas la moitier. Risque de difficulté de debug si l'on créer d'autre composants enfants
 
 **8. Ajoutez un paragraphe `p` au composant `User` pour afficher la date de naissance sous la forme "Né le 27/02/1942" pour un homme ou "Née le 27/02/1942" pour une femme en utilisant une condition ternaire. Copiez le code ajouté dans ce document en guise de réponse.**
 
