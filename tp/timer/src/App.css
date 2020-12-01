@@ -27,3 +27,28 @@ button:hover{
   background-color: rgba(255,0,0,1);
   color: white;
 }
+p {
+  font-size: 4rem;
+  font-family: 'Raleway', sans-serif;
+  transition-duration: 0.5s;
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}
+hr {
+  width: 50%;
+  color: red;
+  margin-top: 2rem;
+  margin-bottom: 2rem
+}
